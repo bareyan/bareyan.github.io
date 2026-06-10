@@ -1,0 +1,110 @@
+export default {
+  code: 'en',
+  label: 'EN',
+
+  hero: {
+    eyebrow: '$ whoami',
+    name: 'Sipan Bareyan',
+    // {strong} marks words wrapped in <strong> in order of appearance.
+    tagline:
+      'Maths & CS student at {0}, joining {1} in September. I build {2} and the engineering behind them, and I have been shipping software for clients since 2020.',
+    taglineStrong: ['Université Paris-Saclay', 'CentraleSupélec', 'AI products'],
+    typing: ['AI engineer', 'full-stack developer', 'maths & CS student', 'freelancer since 2020'],
+  },
+
+  map: {
+    caption: 'a forward pass through my CV — tap a node to jump to it',
+    kinds: { input: 'education', hidden: 'projects', output: 'experience', next: 'next step' },
+    nextLabel: 'Sept 2026',
+  },
+
+  actions: {
+    email: 'Email me',
+    cv: 'CV (PDF)',
+    github: 'GitHub',
+    linkedin: 'LinkedIn',
+  },
+
+  sections: {
+    education: 'input layer · education',
+    whatido: 'weights · skills',
+    projects: 'hidden layer · projects',
+    experience: 'output layer · experience',
+    contact: "let's talk.",
+  },
+
+  education: {
+    saclay: {
+      title: 'Université Paris-Saclay',
+      detail: 'BSc Maths & Computer Science',
+    },
+    centrale: {
+      title: 'CentraleSupélec',
+      detail: 'Engineering degree — entering September 2026',
+    },
+  },
+
+  whatido: [
+    {
+      k: 'ai features',
+      v: 'LLM pipelines, document understanding, retrieval over knowledge graphs, generation workflows.',
+    },
+    {
+      k: 'full-stack',
+      v: 'Web apps in React, mobile in Flutter — three years of freelance experience alongside my studies.',
+    },
+    {
+      k: 'foundations',
+      v: 'Rust, C++, Python and a strong maths background. 2nd place at JFP 15 (Île-de-France programming contest).',
+    },
+  ],
+
+  projects: {
+    eduviz: {
+      title: 'EduViz',
+      desc: 'Turns PDFs and course notes into narrated explainer videos with a pedagogical structure. Built for the Gemini 3 Hackathon.',
+      cta: 'watch demos →',
+    },
+    kgexplorer: {
+      title: 'rust-kg-explorer',
+      desc: 'Knowledge-graph explorer: entity navigation, SPARQL queries, automatic cleaning of heterogeneous graphs. Used during my research internship at LISN (CNRS / Paris-Saclay).',
+      cta: 'source →',
+    },
+    micrograd: {
+      title: 'cpp-micrograd',
+      desc: 'A small automatic-differentiation engine written from scratch in C++ — backprop without the framework, to understand it properly.',
+      cta: 'source →',
+    },
+    tetris: {
+      title: 'Tetris AI',
+      desc: 'Heuristic Tetris agent with weights tuned by a genetic algorithm — clears thousands of lines. Includes a study of polyomino generation.',
+      cta: 'source →',
+    },
+  },
+
+  experience: {
+    saclay26: {
+      role: 'Research intern — inverse problems & numerical optimization in Julia',
+      org: 'Université Paris-Saclay',
+    },
+    lisn25: {
+      role: 'Research intern, LAHDAK team — knowledge graphs & ML data preparation',
+      org: 'LISN (CNRS / Paris-Saclay)',
+    },
+    volo23: {
+      role: 'Front-end intern — React web apps',
+      org: 'Volo, Yerevan',
+    },
+    freelance: {
+      role: 'Freelance developer — web & mobile products for startups and international clients',
+      org: 'remote',
+    },
+  },
+
+  footer: {
+    emailLabel: 'email',
+    githubLabel: 'github',
+    linkedinLabel: 'linkedin',
+    langs: 'EN (C1 · TOEIC 990) · FR (professional) · RU · HY — based in Paris area',
+  },
+}
