@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#10162a"/>
+  <rect x="40" y="40" width="1120" height="550" rx="22" fill="#0b1020" stroke="#27314f" stroke-width="2"/>
+  <!-- terminal chrome -->
+  <circle cx="84" cy="86" r="8" fill="#ff5f57"/>
+  <circle cx="112" cy="86" r="8" fill="#febc2e"/>
+  <circle cx="140" cy="86" r="8" fill="#28c840"/>
+  <text x="96" y="190" font-family="'IBM Plex Mono','DejaVu Sans Mono',monospace" font-size="30" fill="#7d8aa8">$ whoami</text>
+  <text x="96" y="300" font-family="'Space Grotesk','DejaVu Sans',sans-serif" font-weight="700" font-size="84" fill="#f4f1ea">Sipan Bareyan</text>
+  <text x="96" y="372" font-family="'IBM Plex Mono','DejaVu Sans Mono',monospace" font-size="36" fill="#3b6fff">&gt; AI engineer · full-stack developer</text>
+  <text x="96" y="448" font-family="'IBM Plex Mono','DejaVu Sans Mono',monospace" font-size="27" fill="#aeb8d0">Maths &amp; CS · Paris-Saclay &#8594; CentraleSupelec</text>
+  <text x="96" y="490" font-family="'IBM Plex Mono','DejaVu Sans Mono',monospace" font-size="27" fill="#aeb8d0">Building AI products and the engineering behind them.</text>
+  <rect x="96" y="546" width="13" height="26" rx="2" fill="#ff9d5c"/>
+  <text x="126" y="567" font-family="'IBM Plex Mono','DejaVu Sans Mono',monospace" font-size="26" fill="#cdd5e8">bareyan.github.io</text>
+</svg>
