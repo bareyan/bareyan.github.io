@@ -82,14 +82,33 @@ export default {
     },
   },
 
+  reportModal: {
+    one: 'report',
+    many: 'reports',
+    documents: 'reports',
+    view: 'open',
+    close: 'Close',
+  },
+
   experience: {
     saclay26: {
       role: 'Research intern — inverse problems & numerical optimization in Julia',
       org: 'Université Paris-Saclay',
+      summary:
+        'Research internship at Université Paris-Saclay on inverse problems and numerical optimization, with the methods implemented and benchmarked in Julia.',
+      reports: {
+        r1: 'Internship report — part 1',
+        r2: 'Internship report — part 2',
+      },
     },
     lisn25: {
       role: 'Research intern, LAHDAK team — knowledge graphs & ML data preparation',
       org: 'LISN (CNRS / Paris-Saclay)',
+      summary:
+        'Research internship in the LAHDAK team at LISN (CNRS / Paris-Saclay): knowledge-graph exploration, SPARQL querying and automatic cleaning of heterogeneous graphs to prepare data for machine learning. Tooling open-sourced as rust-kg-explorer.',
+      reports: {
+        r1: 'Internship report',
+      },
     },
     volo23: {
       role: 'Front-end intern — React web apps',

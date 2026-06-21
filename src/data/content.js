@@ -37,9 +37,28 @@ export const projects = [
   },
 ]
 
+// `reports` = PDFs hosted under /public/reports/, opened from the per-internship
+// modal (see ReportModal.jsx). Each report's human label is translated in
+// src/i18n/{en,fr}.js under experience[id].reports[reportId]. `links` are
+// external resources (repo, project page); their labels are proper nouns, so they
+// stay here language-neutral. Keep file paths in sync with the actual PDFs on disk.
 export const experience = [
-  { id: 'saclay26', year: '2026', short: "Saclay '26" },
-  { id: 'lisn25', year: '2025', short: "LISN '25" },
+  {
+    id: 'saclay26',
+    year: '2026',
+    short: "Saclay '26",
+    reports: [
+      { id: 'r1', file: 'reports/saclay26-1.pdf' },
+      { id: 'r2', file: 'reports/saclay26-2.pdf' },
+    ],
+  },
+  {
+    id: 'lisn25',
+    year: '2025',
+    short: "LISN '25",
+    links: [{ label: 'rust-kg-explorer', url: 'https://github.com/bareyan/rust-kg-explorer' }],
+    reports: [{ id: 'r1', file: 'reports/lisn25.pdf' }],
+  },
   { id: 'volo23', year: '2023', short: "Volo '23" },
   { id: 'freelance', year: '2020–23', short: 'Freelance' },
 ]

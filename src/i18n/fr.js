@@ -81,14 +81,33 @@ export default {
     },
   },
 
+  reportModal: {
+    one: 'rapport',
+    many: 'rapports',
+    documents: 'rapports',
+    view: 'ouvrir',
+    close: 'Fermer',
+  },
+
   experience: {
     saclay26: {
       role: 'Stagiaire de recherche — problèmes inverses & optimisation numérique en Julia',
       org: 'Université Paris-Saclay',
+      summary:
+        'Stage de recherche à l’Université Paris-Saclay sur les problèmes inverses et l’optimisation numérique, avec des méthodes implémentées et évaluées en Julia.',
+      reports: {
+        r1: 'Rapport de stage — partie 1',
+        r2: 'Rapport de stage — partie 2',
+      },
     },
     lisn25: {
       role: 'Stagiaire de recherche, équipe LAHDAK — graphes de connaissances & préparation de données ML',
       org: 'LISN (CNRS / Paris-Saclay)',
+      summary:
+        'Stage de recherche dans l’équipe LAHDAK au LISN (CNRS / Paris-Saclay) : exploration de graphes de connaissances, requêtes SPARQL et nettoyage automatique de graphes hétérogènes pour préparer des données destinées à l’apprentissage automatique. Outillage publié en open source sous le nom rust-kg-explorer.',
+      reports: {
+        r1: 'Rapport de stage',
+      },
     },
     volo23: {
       role: 'Stagiaire front-end — applications web React',
