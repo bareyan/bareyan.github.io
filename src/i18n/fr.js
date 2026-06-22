@@ -5,9 +5,8 @@ export default {
   hero: {
     eyebrow: '$ whoami',
     name: 'Sipan Bareyan',
-    tagline:
-      'Étudiant en maths & informatique à {0}, j’intègre {1} en septembre. Je conçois des {2} et l’ingénierie qui les fait tourner, et je développe pour des clients depuis 2020.',
-    taglineStrong: ['l’Université Paris-Saclay', 'CentraleSupélec', 'produits d’IA'],
+    tagline: 'Étudiant en maths & informatique à {0}, j’intègre {1} en septembre.',
+    taglineStrong: ['l’Université Paris-Saclay', 'CentraleSupélec'],
     typing: ['ingénieur IA', 'développeur full-stack', 'étudiant maths & info', 'freelance depuis 2020'],
   },
 
@@ -87,6 +86,7 @@ export default {
     documents: 'rapports',
     view: 'ouvrir',
     close: 'Fermer',
+    draft: 'Brouillon',
   },
 
   experience: {
@@ -96,8 +96,14 @@ export default {
       summary:
         'Stage de recherche à l’Université Paris-Saclay sur les problèmes inverses et l’optimisation numérique, avec des méthodes implémentées et évaluées en Julia.',
       reports: {
-        r1: 'Rapport de stage — partie 1',
-        r2: 'Rapport de stage — partie 2',
+        r1: {
+          label: 'Rapport de stage — partie 1',
+          desc: 'Compare les méthodes de calcul du gradient et l’utilisation de l’astuce de l’adjoint.',
+        },
+        r2: {
+          label: 'Rapport de stage — partie 2',
+          desc: 'Analyse le conditionnement du problème et compare les méthodes d’optimisation et la régularisation.',
+        },
       },
     },
     lisn25: {
@@ -106,7 +112,7 @@ export default {
       summary:
         'Stage de recherche dans l’équipe LAHDAK au LISN (CNRS / Paris-Saclay) : exploration de graphes de connaissances, requêtes SPARQL et nettoyage automatique de graphes hétérogènes pour préparer des données destinées à l’apprentissage automatique. Outillage publié en open source sous le nom rust-kg-explorer.',
       reports: {
-        r1: 'Rapport de stage',
+        r1: { label: 'Rapport de stage' },
       },
     },
     volo23: {

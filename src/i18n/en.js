@@ -6,9 +6,8 @@ export default {
     eyebrow: '$ whoami',
     name: 'Sipan Bareyan',
     // {strong} marks words wrapped in <strong> in order of appearance.
-    tagline:
-      'Maths & CS student at {0}, joining {1} in September. I build {2} and the engineering behind them, and I have been shipping software for clients since 2020.',
-    taglineStrong: ['Université Paris-Saclay', 'CentraleSupélec', 'AI products'],
+    tagline: 'Maths & CS student at {0}, joining {1} in September.',
+    taglineStrong: ['Université Paris-Saclay', 'CentraleSupélec'],
     typing: ['AI engineer', 'full-stack developer', 'maths & CS student', 'freelancer since 2020'],
   },
 
@@ -88,6 +87,7 @@ export default {
     documents: 'reports',
     view: 'open',
     close: 'Close',
+    draft: 'Draft',
   },
 
   experience: {
@@ -97,8 +97,14 @@ export default {
       summary:
         'Research internship at Université Paris-Saclay on inverse problems and numerical optimization, with the methods implemented and benchmarked in Julia.',
       reports: {
-        r1: 'Internship report — part 1',
-        r2: 'Internship report — part 2',
+        r1: {
+          label: 'Internship report — part 1',
+          desc: 'Compares gradient computation methods and the use of the adjoint trick.',
+        },
+        r2: {
+          label: 'Internship report — part 2',
+          desc: 'Analyses the conditioning of the problem and compares optimization methods and regularization.',
+        },
       },
     },
     lisn25: {
@@ -107,7 +113,7 @@ export default {
       summary:
         'Research internship in the LAHDAK team at LISN (CNRS / Paris-Saclay): knowledge-graph exploration, SPARQL querying and automatic cleaning of heterogeneous graphs to prepare data for machine learning. Tooling open-sourced as rust-kg-explorer.',
       reports: {
-        r1: 'Internship report',
+        r1: { label: 'Internship report' },
       },
     },
     volo23: {

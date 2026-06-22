@@ -121,13 +121,17 @@ h2{font-family:var(--mono);font-weight:500;font-size:13px;letter-spacing:.08em;t
 .modal-org{font-family:var(--mono);font-size:12.5px;color:var(--muted);margin-bottom:6px}
 .modal h3{font-family:var(--disp);font-size:21px;font-weight:700;letter-spacing:-.01em;line-height:1.2;margin-bottom:12px;padding-right:30px}
 .modal-summary{font-size:15px;color:#3A3D43;margin-bottom:16px}
+.modal-draft{display:inline-flex;align-items:center;gap:7px;font-family:var(--mono);font-size:12px;color:var(--apricot);border:1px solid var(--apricot);border-radius:99px;padding:4px 11px;margin-bottom:18px}
+.modal-draft::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--apricot)}
 .modal-links{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:20px;font-family:var(--mono);font-size:13px}
 .modal-docs h4{font-family:var(--mono);font-weight:500;font-size:11.5px;letter-spacing:.08em;text-transform:lowercase;color:var(--muted);margin-bottom:10px}
-.doc{display:flex;align-items:center;gap:12px;border:1px solid var(--line);border-radius:8px;padding:12px 14px;margin-bottom:8px;color:var(--ink);background:#fff;transition:border-color .15s,transform .15s}
+.doc{display:flex;align-items:flex-start;gap:12px;border:1px solid var(--line);border-radius:8px;padding:12px 14px;margin-bottom:8px;color:var(--ink);background:#fff;transition:border-color .15s,transform .15s}
 .doc:hover{border-color:var(--ink);transform:translateY(-1px);text-decoration:none}
-.doc-icon{font-family:var(--mono);font-size:10.5px;font-weight:600;letter-spacing:.06em;color:var(--apricot);border:1px solid var(--apricot);border-radius:4px;padding:3px 5px}
-.doc-label{flex:1;font-size:14.5px}
-.doc-go{font-family:var(--mono);font-size:12px;color:var(--cobalt)}
+.doc-icon{flex-shrink:0;margin-top:1px;font-family:var(--mono);font-size:10.5px;font-weight:600;letter-spacing:.06em;color:var(--apricot);border:1px solid var(--apricot);border-radius:4px;padding:3px 5px}
+.doc-text{flex:1;display:flex;flex-direction:column;gap:3px}
+.doc-label{font-size:14.5px}
+.doc-desc{font-size:12.5px;line-height:1.45;color:var(--muted)}
+.doc-go{flex-shrink:0;margin-top:1px;font-family:var(--mono);font-size:12px;color:var(--cobalt)}
 
 footer{padding:38px 0 64px}
 footer .big{font-family:var(--disp);font-weight:700;font-size:clamp(24px,6vw,32px);letter-spacing:-.02em;margin-bottom:18px}

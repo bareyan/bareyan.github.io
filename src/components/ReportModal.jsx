@@ -45,6 +45,7 @@ export default function ReportModal({ entry, onClose }) {
         <p className="modal-org">{copy.org}</p>
         <h3 id="rm-title">{copy.role}</h3>
         {copy.summary && <p className="modal-summary">{copy.summary}</p>}
+        {entry.draft && <p className="modal-draft">{ui.draft}</p>}
 
         {links.length > 0 && (
           <div className="modal-links">
@@ -59,19 +60,27 @@ export default function ReportModal({ entry, onClose }) {
         {reports.length > 0 && (
           <div className="modal-docs">
             <h4>{ui.documents}</h4>
-            {reports.map((r) => (
-              <a
-                key={r.id}
-                className="doc"
-                href={`/${r.file}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="doc-icon">PDF</span>
-                <span className="doc-label">{copy.reports?.[r.id] || r.id}</span>
-                <span className="doc-go">{ui.view} →</span>
-              </a>
-            ))}
+            {reports.map((r) => {
+              const rc = copy.reports?.[r.id]
+              const label = (typeof rc === 'string' ? rc : rc?.label) || r.id
+              const desc = typeof rc === 'object' ? rc?.desc : null
+              return (
+                <a
+                  key={r.id}
+                  className="doc"
+                  href={`/${r.file}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span className="doc-icon">PDF</span>
+                  <span className="doc-text">
+                    <span className="doc-label">{label}</span>
+                    {desc && <span className="doc-desc">{desc}</span>}
+                  </span>
+                  <span className="doc-go">{ui.view} →</span>
+                </a>
+              )
+            })}
           </div>
         )}
       </div>
