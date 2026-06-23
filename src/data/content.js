@@ -50,8 +50,8 @@ export const experience = [
     draft: true,
     links: [{ label: 'PDE_adjoint_solver', url: 'https://github.com/bareyan/PDE_adjoint_solver' }],
     reports: [
-      { id: 'r1', file: 'reports/saclay26-1.pdf' },
-      { id: 'r2', file: 'reports/saclay26-2.pdf' },
+      { id: 'r1', file: 'reports/gradient.pdf' },
+      { id: 'r2', file: 'reports/optimization.pdf' },
     ],
   },
   {
