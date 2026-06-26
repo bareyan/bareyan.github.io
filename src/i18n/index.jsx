@@ -10,8 +10,7 @@ const I18nContext = createContext(null)
 function detectInitial() {
   const saved = localStorage.getItem('lang')
   if (saved && LANGS.includes(saved)) return saved
-  const nav = (navigator.language || 'en').slice(0, 2).toLowerCase()
-  return LANGS.includes(nav) ? nav : 'en'
+  return 'en'
 }
 
 export function I18nProvider({ children }) {
